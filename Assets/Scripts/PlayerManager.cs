@@ -167,13 +167,14 @@ public class PlayerManager : MonoBehaviour
     }
 
     // Every object that uses a rigidBody2D has this method
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground")
         {
             canJump = true;
             jumping = false;
             animator.SetInteger("dino_state", animationStateIdle);
         }
     }
+
 }

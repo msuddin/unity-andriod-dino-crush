@@ -11,19 +11,22 @@ For this project, I have decided to cover the following areas:
 - [ ] Using Unity
   - [ ] Create a simple platformer game
     - [ ] Health
-    - [ ] Score
+    - [x] Score
     - [ ] Enemies
-    - [ ] Scrolling platforms
+    - [x] Scrolling platforms
     - [ ] Levels
     - [ ] Boss
     - [ ] Powers
-    - [ ] Shooting
-    - [ ] Sprite animation
+    - [x] Shooting
+    - [x] Sprite animation
     - [ ] 3 Levels
+    - [ ] Audio effects
+    - [ ] Particles
+  - [ ] Game background audio
   - [ ] Screens / Scenes
     - [ ] Intro movie
     - [ ] Start screen
-    - [ ] Main menu
+    - [x] Main menu
     - [ ] Level select
     - [ ] Options
     - [ ] Credits screen
