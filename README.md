@@ -10,7 +10,7 @@ For this project, I have decided to cover the following areas:
 - [ ] Programming in C#
 - [ ] Using Unity
   - [ ] Create a simple platformer game
-    - [ ] Health
+    - [x] Health
     - [x] Score
     - [ ] Enemies
     - [x] Scrolling platforms
@@ -33,7 +33,7 @@ For this project, I have decided to cover the following areas:
     - [ ] Store screen
     - [ ] Gameplay screen
     - [ ] Pause screen
-- [ ] Creating game sprites
+- [x] Creating game sprites
 - [ ] Writing automated
   - [ ] Unit tests
   - [ ] Integration tests
