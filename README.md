@@ -17,7 +17,7 @@ For this project, I have decided to cover the following areas:
     - [x] Scrolling platforms
     - [ ] Levels
     - [ ] Boss
-    - [ ] Powers
+    - [x] Powers
     - [x] Shooting
     - [x] Sprite animation
     - [ ] 3 Levels

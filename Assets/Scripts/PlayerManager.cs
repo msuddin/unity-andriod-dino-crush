@@ -23,6 +23,9 @@ public class PlayerManager : MonoBehaviour
     public GameObject leftBullet;
     public GameObject rightBullet;
 
+    private bool canDoubleJump = false;
+    private bool isDoubleJumping = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -73,6 +76,12 @@ public class PlayerManager : MonoBehaviour
                 jumping = true;
                 rigidbody2D.AddForce(new Vector2(rigidbody2D.velocity.x, jumpSpeedY));
                 animator.SetInteger("dino_state", animationStateJump);
+            }
+            if (canDoubleJump && !isDoubleJumping)
+            {
+                canJump = true;
+                jumping = true;
+                isDoubleJumping = true;
             }
         }
 
@@ -173,7 +182,14 @@ public class PlayerManager : MonoBehaviour
         {
             canJump = true;
             jumping = false;
+            isDoubleJumping = false;
             animator.SetInteger("dino_state", animationStateIdle);
+        }
+
+        if(other.gameObject.CompareTag("power_double"))
+        {
+            Destroy(other.gameObject);
+            canDoubleJump = true;
         }
     }
 
