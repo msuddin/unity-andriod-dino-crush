@@ -22,7 +22,7 @@ For this project, I have decided to cover the following areas:
     - [x] Sprite animation
     - [ ] 3 Levels
     - [ ] Audio effects
-    - [ ] Particles
+    - [x] Particles
   - [ ] Game background audio
   - [ ] Screens / Scenes
     - [ ] Intro movie
@@ -63,3 +63,8 @@ Generate Logo: https://cooltext.com/
 
 The fonts for this game where found in:
 Fonts: https://www.fontsquirrel.com/fonts/komika-axis
+
+## Known Bugs
+ - Double jumping right under a 'ground' label platform can cause player to double jump forever
+ - Double power particles appear behind the game background
+ - Falling animation is a little unstable

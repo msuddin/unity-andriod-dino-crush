@@ -168,10 +168,16 @@ public class PlayerManager : MonoBehaviour
     {
         if (canJump)
         {
-            jumping = true;
             canJump = false;
+            jumping = true;
             rigidbody2D.AddForce(new Vector2(rigidbody2D.velocity.x, jumpSpeedY));
             animator.SetInteger("dino_state", animationStateJump);
+        }
+        if (canDoubleJump && !isDoubleJumping)
+        {
+            canJump = true;
+            jumping = true;
+            isDoubleJumping = true;
         }
     }
 
@@ -188,7 +194,6 @@ public class PlayerManager : MonoBehaviour
 
         if(other.gameObject.CompareTag("power_double"))
         {
-            Destroy(other.gameObject);
             canDoubleJump = true;
         }
     }
