@@ -12,7 +12,8 @@ For this project, I have decided to cover the following areas:
   - [ ] Create a simple platformer game
     - [x] Health
     - [x] Score
-    - [ ] Enemies
+    - [x] Moving enemies
+    - [x] Static enemies
     - [x] Scrolling platforms
     - [ ] Levels
     - [ ] Boss
