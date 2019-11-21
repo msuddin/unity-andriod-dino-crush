@@ -7,7 +7,9 @@ public class BallManager : MonoBehaviour
 {
     public static BallManager ballManagerInstance;
     public TextMeshProUGUI text;
-    int balls;
+    public int totalBallsOnLevel;
+    public string nextLevel;
+    private int balls;
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +24,13 @@ public class BallManager : MonoBehaviour
     {
         balls += ballAmount;
         text.text = balls.ToString();
+    }
+
+    public void Update()
+    {
+        if (balls == totalBallsOnLevel)
+        {
+            MenuController.instance.LoadScene(nextLevel);
+        }
     }
 }

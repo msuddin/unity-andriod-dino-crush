@@ -15,12 +15,12 @@ For this project, I have decided to cover the following areas:
     - [x] Moving enemies
     - [x] Static enemies
     - [x] Scrolling platforms
-    - [ ] Levels
+    - [x] Levels
     - [ ] Boss
     - [x] Powers
     - [x] Shooting
     - [x] Sprite animation
-    - [ ] 3 Levels
+    - [x] 3 Levels
     - [ ] Audio effects
     - [x] Particles
   - [ ] Game background audio

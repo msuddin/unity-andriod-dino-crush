@@ -8,6 +8,7 @@ TagManager:
   - Ball
   - Spike
   - power_double
+  - sign
   layers:
   - Default
   - TransparentFX
@@ -44,4 +45,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3718044085
+    locked: 0
+  - name: Platform
+    uniqueID: 3853730405
+    locked: 0
+  - name: PlatformCharacter
+    uniqueID: 1851472069
+    locked: 0
+  - name: PlatformItem
+    uniqueID: 1095989613
+    locked: 0
+  - name: UI
+    uniqueID: 3889489645
     locked: 0
