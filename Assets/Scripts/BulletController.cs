@@ -27,5 +27,10 @@ public class BulletController : MonoBehaviour
             Destroy(other.gameObject);
             Destroy(this.gameObject);
         }
+        if(other.gameObject.CompareTag("Boss"))
+        {
+            Destroy(this.gameObject);
+            Boss.instance.reduceHealth(10); 
+        }
     }
 }

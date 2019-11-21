@@ -9,6 +9,7 @@ TagManager:
   - Spike
   - power_double
   - sign
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -18,11 +19,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Background
+  - Platform
+  - PlatformItems
+  - PlatformCharacter
+  - UI
   - 
   - 
   - 
