@@ -10,6 +10,8 @@ TagManager:
   - power_double
   - sign
   - Boss
+  - deadZone
+  - enemy
   layers:
   - Default
   - TransparentFX

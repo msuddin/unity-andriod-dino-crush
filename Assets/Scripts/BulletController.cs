@@ -30,7 +30,23 @@ public class BulletController : MonoBehaviour
         if(other.gameObject.CompareTag("Boss"))
         {
             Destroy(this.gameObject);
-            Boss.instance.reduceHealth(10); 
+
+            if (Boss.instance.getCurrentHealth() <= 60)
+            {
+                Boss.instance.setDefence(10);
+                int damage = 15 - Boss.instance.getDefence();
+                Boss.instance.reduceHealth(damage);
+            }
+            if (Boss.instance.getCurrentHealth() <= 30)
+            {
+                Boss.instance.setDefence(13);
+                int damage = 15 - Boss.instance.getDefence();
+                Boss.instance.reduceHealth(damage);
+            }
+            else
+            {
+                Boss.instance.reduceHealth(10);
+            }
         }
     }
 }

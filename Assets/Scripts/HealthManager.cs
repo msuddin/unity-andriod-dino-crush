@@ -16,7 +16,14 @@ public class HealthManager : MonoBehaviour
         {
             instance = this;
         }
-        
+    }
+
+    public void Update()
+    {
+        if(health <= 0)
+        {
+            MenuController.instance.LoadScene("01.Menu");
+        }
     }
 
     public void reduceHeealth(int damageTaken)

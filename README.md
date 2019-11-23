@@ -16,7 +16,7 @@ For this project, I have decided to cover the following areas:
     - [x] Static enemies
     - [x] Scrolling platforms
     - [x] Levels
-    - [ ] Boss
+    - [x] Boss
     - [x] Powers
     - [x] Shooting
     - [x] Sprite animation

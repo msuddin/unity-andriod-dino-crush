@@ -25,14 +25,14 @@ public class Petrol : MonoBehaviour
                 movingRight = true;
             }
         }
-    }
 
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        if(other.gameObject.CompareTag("Player"))
+        if(Boss.instance.getCurrentHealth() <= 60)
         {
-            HealthManager.instance.reduceHeealth(25);
-            Destroy(this.gameObject);
+            this.speed = 3f;
+        }
+        if (Boss.instance.getCurrentHealth() <= 30)
+        {
+            this.speed = 4f;
         }
     }
 }

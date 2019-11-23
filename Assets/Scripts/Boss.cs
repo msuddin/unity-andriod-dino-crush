@@ -7,7 +7,8 @@ public class Boss : MonoBehaviour
 {
     public static Boss instance;
     public int health = 100;
-    public string nextLevel;
+    public int defence = 5;
+
     public TextMeshProUGUI bossDisplayHealth;
 
     // Start is called before the first frame update
@@ -19,23 +20,32 @@ public class Boss : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if(health <= 0)
-        {
-            MenuController.instance.LoadScene(nextLevel);
-        }
-    }
-
-    public void OnCollisionEnter2D(Collision2D other)
-    {
-        
-    }
-
     public void reduceHealth(int reducedHealth)
     {
         health -= reducedHealth;
         bossDisplayHealth.text = health.ToString();
+    }
+
+    public int getCurrentHealth()
+    {
+        return this.health;
+    }
+
+    public void setDefence(int newDefence)
+    {
+        this.defence = newDefence;
+    }
+
+    public int getDefence()
+    {
+        return this.defence;
+    }
+
+    public void Update()
+    {
+        if (health <= 0)
+        {
+            MenuController.instance.LoadScene("01.Menu");
+        }
     }
 }

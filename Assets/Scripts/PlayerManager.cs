@@ -13,6 +13,8 @@ public class PlayerManager : MonoBehaviour
     public float speedX;
     public float jumpSpeedY;
 
+    public string sceneUponDeath;
+
     private int animationStateIdle = 1;
     private int animationStateRun = 3;
     private int animationStateJump = 4;
@@ -195,6 +197,22 @@ public class PlayerManager : MonoBehaviour
         if(other.gameObject.CompareTag("power_double"))
         {
             canDoubleJump = true;
+        }
+
+        if(other.gameObject.CompareTag("deadZone"))
+        {
+            HealthManager.instance.reduceHeealth(100);
+        }
+
+        if (other.gameObject.CompareTag("enemy"))
+        {
+            HealthManager.instance.reduceHeealth(10);
+            Destroy(other.gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Boss"))
+        {
+            HealthManager.instance.reduceHeealth(15);
         }
     }
 
