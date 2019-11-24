@@ -90,6 +90,7 @@ public class PlayerManager : MonoBehaviour
         // Fire Bullet
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
+            SoundManagerScript.PlaySound("fire");
             FireBullet();
         }
     }
@@ -111,7 +112,8 @@ public class PlayerManager : MonoBehaviour
 
     public void FireBullet()
     {
-        if(facingRight)
+        
+        if (facingRight)
         {
             Instantiate(rightBullet, firePosition.position, Quaternion.identity);
         }

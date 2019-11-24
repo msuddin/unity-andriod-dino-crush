@@ -6,7 +6,7 @@ using TMPro;
 public class HealthManager : MonoBehaviour
 {
     public static HealthManager instance;
-    public int health;
+    public int health = 100;
     public TextMeshProUGUI healthAmount;
 
     // Start is called before the first frame update

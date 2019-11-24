@@ -8,6 +8,10 @@ public class Petrol : MonoBehaviour
     private bool movingRight = true;
     public Transform groundDetection;
 
+    public void Start()
+    {
+    }
+
     public void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
@@ -26,13 +30,16 @@ public class Petrol : MonoBehaviour
             }
         }
 
-        if(Boss.instance.getCurrentHealth() <= 60)
+        if (Boss.instance != null)
         {
-            this.speed = 3f;
-        }
-        if (Boss.instance.getCurrentHealth() <= 30)
-        {
-            this.speed = 4f;
+            if (Boss.instance.getCurrentHealth() <= 60)
+            {
+                this.speed = 3f;
+            }
+            if (Boss.instance.getCurrentHealth() <= 30)
+            {
+                this.speed = 4f;
+            }
         }
     }
 }
