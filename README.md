@@ -45,7 +45,7 @@ Once all the above areas have been marked off, this should be enough to get star
 
 ## User Flow
 The flow diagram below details the journey that a user would take whilst navigating the game. For this game project, we should aim to do a portion of the flow: 
-![User flow diagram](https://github.com/msuddin/unity-android-game-csharp/blob/master/user_flow_digram.png)
+![User flow diagram](https://github.com/msuddin/unity-android-dino-crush/blob/master/user_flow_digram.png)
 
 ## Foot Note
 This project is designed to be a learning process.
