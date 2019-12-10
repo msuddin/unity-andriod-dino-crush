@@ -38,7 +38,7 @@ For this project, I have decided to cover the following areas:
   - [ ] Integration tests
   - [ ] End to end tests
 - [ ] Integration with InApp Store purchase
-- [ ] Integration for Mobile Ads
+- [x] Integration for Mobile Ads
 - [ ] Custom game engine code (a possible approach to pull out scripts into another repo)
 
 Once all the above areas have been marked off, this should be enough to get started on a first possible Play Store Android project.
