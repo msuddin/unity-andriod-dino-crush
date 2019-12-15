@@ -8,8 +8,8 @@ The purpose of this project is to increase understanding on how to create a play
 
 ## Expected Learning Outcomes
 For this project, I have decided to cover the following areas:
-- [ ] Programming in C#
-- [ ] Using Unity
+- [x] Programming in C#
+- [x] Using Unity
   - [x] Create a simple platformer game
     - [x] Health
     - [x] Score
@@ -26,20 +26,14 @@ For this project, I have decided to cover the following areas:
     - [x] Particles
   - [x] Game background audio
   - [ ] Screens / Scenes
-    - [ ] Intro movie
     - [x] Main menu
-    - [ ] Options
     - [ ] Store screen (integration for inApp purchases)
     - [x] Gameplay screen
-    - [ ] Pause screen
 - [x] Creating game sprites
-- [ ] Writing automated
-  - [ ] Unit tests
-  - [ ] Integration tests
-  - [ ] End to end tests
+- [x] Writing automated
+  - [x] Unit tests
 - [ ] Integration with InApp Store purchase
 - [x] Integration for Mobile Ads
-- [ ] Custom game engine code (a possible approach to pull out scripts into another repo)
 
 Once all the above areas have been marked off, this should be enough to get started on a first possible Play Store Android project.
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class Boss : MonoBehaviour
 {
@@ -9,7 +9,7 @@ public class Boss : MonoBehaviour
     public int health = 100;
     public int defence = 5;
 
-    public TextMeshProUGUI bossDisplayHealth;
+    //public TextMeshProUGUI bossDisplayHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -23,7 +23,7 @@ public class Boss : MonoBehaviour
     public void reduceHealth(int reducedHealth)
     {
         health -= reducedHealth;
-        bossDisplayHealth.text = health.ToString();
+        //bossDisplayHealth.text = health.ToString();
     }
 
     public int getCurrentHealth()

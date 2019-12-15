@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class BallManager : MonoBehaviour
 {
     public static BallManager ballManagerInstance;
-    public TextMeshProUGUI text;
+    //public TextMeshProUGUI text;
     public int totalBallsOnLevel;
     public string nextLevel;
     private int balls;
@@ -23,7 +23,7 @@ public class BallManager : MonoBehaviour
     public void ChangeBall(int ballAmount)
     {
         balls += ballAmount;
-        text.text = balls.ToString();
+        //text.text = balls.ToString();
     }
 
     public void Update()

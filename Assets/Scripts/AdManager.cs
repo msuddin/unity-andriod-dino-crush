@@ -17,4 +17,9 @@ public class AdManager : MonoBehaviour
 			}
 		}
     }
+
+	public void playAdd()
+	{
+		Advertisement.Show("video");
+	}
 }
